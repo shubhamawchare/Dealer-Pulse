@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f4f6f3;
+  --surface: #ffffff;
+  --line: #dbdfd8;
+  --line-strong: #b9c0b6;
+  --ink: #14181a;
+  --ink-muted: #5b6360;
+  --accent: #1f6f5c;
+  --accent-soft: #e3efe9;
+  --critical: #b23a2e;
+  --critical-soft: #f6e6e3;
+  --warning: #a8721f;
+  --warning-soft: #f5ecd9;
+  --info: #35576b;
+  --info-soft: #e6edf1;
+  --grid: #e4e6e2;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-critical: var(--critical);
+  --color-critical-soft: var(--critical-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-grid: var(--grid);
+  --font-sans: "IBM Plex Sans", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,5 +1,7 @@
 # DealerPulse
 
+**Live app:** https://dealer-pulse-beta.vercel.app/
+
 A real-time performance dashboard for a 5-branch dealership network built
 with Next.js, TypeScript, Tailwind CSS, and Recharts.
 
